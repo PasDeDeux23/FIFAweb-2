@@ -1,0 +1,110 @@
+/* =====================
+   ESTILOS GENERALES
+===================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+/* =====================
+   ENCABEZADO
+===================== */
+header {
+    background: linear-gradient(to right, #FFD100, #034EA2, #E42217); /* Amarillo, azul, rojo */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* =====================
+   TABLA
+===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* =====================
+   CABECERAS
+===================== */
+th {
+    background: #FFD100; /* Amarillo bandera */
+    color: #000;
+    text-transform: uppercase;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* =====================
+   CELDAS
+===================== */
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* Alternar filas en colores suaves */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background: #fffdf0; /* Amarillo muy claro */
+}
+
+/* Hover */
+tr:hover {
+    background: #eaf4ff; /* Azul suave */
+    transition: background 0.3s;
+}
+
+/* =====================
+   IMÁGENES
+===================== */
+td img {
+    width: 80px;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid #034EA2; /* Azul bandera */
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    td img {
+        width: 60px;
+    }
+
+    header h1 {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+a {
+    text-decoration: none;   /* quita el subrayado */
+    color: inherit;          /* hereda el color del padre */
+}

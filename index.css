@@ -1,0 +1,193 @@
+/* Reset default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #003087, #0052cc);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover > a {
+    color: #ffd700; /* Gold hover effect */
+}
+
+/* Nested Submenu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #0052cc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    margin: 5px 0;
+}
+
+nav ul li ul li a {
+    color: white;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+nav ul li ul li a:hover {
+    color: #ffd700;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.padre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hijo {
+    display: contents; /* Allows direct styling of .nieto without extra wrapper */
+}
+
+.nieto {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 300px; /* Responsive flex items */
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.nieto:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.nieto h2 {
+    font-size: 1.8em;
+    color: #003087;
+    margin-bottom: 10px;
+}
+
+.nieto p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.nieto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Footer Styling */
+footer {
+    background: #003087;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li ul {
+        position: static;
+        background: #0040a1;
+        box-shadow: none;
+    }
+
+    .nieto {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .nieto h2 {
+        font-size: 1.5em;
+    }
+}
+a {
+    text-decoration: none;   /* quita el subrayado */
+    color: inherit;          /* hereda el color del padre */
+}

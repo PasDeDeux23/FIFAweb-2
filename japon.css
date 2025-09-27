@@ -1,0 +1,111 @@
+/* =====================
+   ESTILOS GENERALES
+===================== */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9; /* gris muy claro */
+}
+
+/* =====================
+   ENCABEZADO
+===================== */
+header {
+    background: white;
+    color: #b30000; /* rojo bandera */
+    text-align: center;
+    padding: 25px;
+    border-bottom: 6px solid #b30000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ffcccc;
+}
+
+/* =====================
+   TABLA
+===================== */
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 25px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* CABECERAS */
+th {
+    background: #b30000; /* rojo bandera */
+    color: #fff;
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+}
+
+/* CELDAS */
+td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+/* Hover */
+tr:hover {
+    background: #ffe6e6; /* rojo muy claro */
+    transition: background 0.3s;
+}
+
+/* =====================
+   IMÁGENES
+===================== */
+td img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%; /* círculo, como el sol de la bandera */
+    border: 3px solid #b30000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    td img {
+        width: 60px;
+    }
+
+    header h1 {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+a {
+    text-decoration: none;   /* quita el subrayado */
+    color: inherit;          /* hereda el color del padre */
+}

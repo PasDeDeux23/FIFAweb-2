@@ -1,0 +1,119 @@
+/* ===================
+   ESTILOS GENERALES
+=================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #00247d, #ffffff, #e4002b); /* Azul, blanco y rojo (Australia) */
+    color: #222;
+}
+
+header {
+    background: #00247d; /* Azul bandera Australia */
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 4px solid #e4002b; /* Rojo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* ===================
+   TABLA
+=================== */
+.padre {
+    padding: 1rem;
+    overflow-x: auto; /* ✅ desplazamiento horizontal en móviles si se necesita */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    table-layout: fixed; /* ✅ mantiene proporciones fijas */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word; /* ✅ evita que el texto se desborde */
+}
+
+th {
+    background: #e4002b; /* Rojo bandera Australia */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+td {
+    font-size: 0.9rem;
+}
+
+/* ===================
+   IMÁGENES
+=================== */
+td img {
+    max-width: 100px;  /* ✅ en pantallas grandes */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.1);
+}
+
+/* ===================
+   RESPONSIVE
+=================== */
+@media (max-width: 1024px) {
+    td img {
+        max-width: 80px;
+    }
+    th, td {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    td img {
+        max-width: 60px;
+    }
+    th, td {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    td img {
+        max-width: 50px;
+    }
+    th, td {
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+    header h1 {
+        font-size: 1.2rem;
+    }
+}
+a {
+    text-decoration: none;   /* quita el subrayado */
+    color: inherit;          /* hereda el color del padre */
+}

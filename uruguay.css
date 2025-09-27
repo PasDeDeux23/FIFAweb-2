@@ -1,0 +1,94 @@
+/* ===================
+   ESTILOS GENERALES
+=================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #55c2ff, #ffffff, #55c2ff); /* Colores Uruguay */
+    color: #222;
+    padding: 1rem;
+}
+
+/* ===================
+   HEADER
+=================== */
+header {
+    background: #003366; /* Azul bandera Uruguay */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 4px solid #55c2ff;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* ===================
+   TABLA
+=================== */
+.padre {
+    width: 100%;
+}
+
+table {
+    width: 100%;   /* ✅ siempre ocupa todo el ancho */
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    table-layout: fixed; /* ✅ columnas proporcionadas */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word; /* ✅ evita que se rompa el texto */
+}
+
+th {
+    background: #55c2ff;
+    color: #003366;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+td {
+    font-size: 0.95rem;
+}
+
+/* ===================
+   IMÁGENES
+=================== */
+td img {
+    max-width: 100%;   /* ✅ se adapta al tamaño de la celda */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.05);
+}
+
+/* ===================
+   TEXTO
+=================== */
+td p {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+a {
+    text-decoration: none;   /* quita el subrayado */
+    color: inherit;          /* hereda el color del padre */
+}

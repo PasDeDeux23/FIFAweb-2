@@ -1,0 +1,88 @@
+/* ================================
+   ESTILOS GENERALES
+================================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* ================================
+   HEADER (TÍTULO)
+================================== */
+header {
+    background: linear-gradient(to right, #8b0000, #4b0082); /* vinotinto elegante */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 26px;   /* fijo, no cambia entre PC/móvil */
+    font-weight: bold;
+    border-radius: 0 0 12px 12px;
+}
+
+/* ================================
+   CONTENEDOR TABLA
+================================== */
+.padre {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto; /* scroll horizontal si fuera necesario */
+}
+
+/* ================================
+   TABLA
+================================== */
+table {
+    width: 100%;
+    max-width: 1000px; /* mantiene proporción en pantallas grandes */
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    table-layout: fixed; /* mantiene columnas iguales */
+    
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word; /* evita que se desborde el texto */
+    font-size: 15px; /* mismo tamaño en móvil y PC */
+}
+
+/* Encabezados */
+th {
+    background: #800000;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* Filas alternadas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ================================
+   IMÁGENES
+================================== */
+img {
+    width: 80px;  /* mismo tamaño en todos lados */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+a {
+    text-decoration: none;   /* quita el subrayado */
+    color: inherit;          /* hereda el color del padre */
+}

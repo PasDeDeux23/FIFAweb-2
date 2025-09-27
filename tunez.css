@@ -1,0 +1,95 @@
+/* ===================
+   ESTILOS GENERALES
+=================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #e30613, #ffffff, #008000); /* Colores de Túnez */
+    color: #222;
+    padding: 1rem;
+}
+
+/* ===================
+   HEADER
+=================== */
+header {
+    background: #e30613; /* Rojo bandera Túnez */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 4px solid #008000;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* ===================
+   TABLA
+=================== */
+.padre {
+    width: 100%;
+}
+
+table {
+    width: 100%;   /* ✅ siempre ocupa todo el ancho */
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    table-layout: fixed; /* ✅ mantiene proporciones */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word; /* ✅ evita desbordes */
+}
+
+th {
+    background: #e30613;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+td {
+    font-size: 0.95rem;
+}
+
+/* ===================
+   IMÁGENES
+=================== */
+td img {
+    max-width: 100%;   /* ✅ ocupa el ancho de la celda */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.05);
+}
+
+/* ===================
+   TEXTO
+=================== */
+td p {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+a {
+    text-decoration: none;   /* quita el subrayado */
+    color: inherit;          /* hereda el color del padre */
+}

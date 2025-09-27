@@ -1,0 +1,112 @@
+/* =====================
+   ESTILOS GENERALES
+===================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdf5e6; /* Fondo suave beige */
+}
+
+/* =====================
+   ENCABEZADO
+===================== */
+header {
+    background: linear-gradient(to right, #aa151b, #f1bf00); /* Rojo y amarillo */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #aa151b;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* =====================
+   TABLA
+===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   CABECERAS
+===================== */
+th {
+    background: #aa151b; /* Rojo bandera */
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #f1bf00; /* Amarillo bandera */
+}
+
+/* =====================
+   CELDAS
+===================== */
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background: #fff4cc; /* Amarillo claro */
+}
+
+tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+/* Hover */
+tr:hover {
+    background: #ffe5e5; /* Rojo muy suave */
+    transition: background 0.3s;
+}
+
+/* =====================
+   IMÁGENES
+===================== */
+td img {
+    width: 80px;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid #aa151b; /* Borde rojo */
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    td img {
+        width: 60px;
+    }
+
+    header h1 {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+a {
+    text-decoration: none;   /* quita el subrayado */
+    color: inherit;          /* hereda el color del padre */
+}
